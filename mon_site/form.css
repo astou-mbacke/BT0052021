@@ -1,0 +1,33 @@
+body{
+    background-image: url("e-commerce.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+ form{
+     width:50%;
+     margin: auto;
+     text-align: center;
+     padding: 1em;
+     background-color: white; 
+     border: 1px solid green;
+     border-radius: 1em;
+     margin-top: 50px;
+     background-color: green ;
+    
+     }
+ 
+ label{
+     font-weight: bold;
+     font-size:15px;  
+     color: white;
+ }
+ 
+ #button{
+     background-color: green;
+     width:120px;
+     color: white;
+ }
+ h2{
+     color: white;
+     text-align: center;
+ }
