@@ -49,21 +49,27 @@ if(isset($_GET['id_membre']) AND $_GET['id_membre']>0)
 </nav>
 </header>
 <section>
-<div class="w3-container w3-padding-64">
-
+<div class="w3-container ">
+<h3 class="w3-center w3-green">BIENVENU <?php echo $_SESSION['nom']; ?> <?php echo $_SESSION['prenom']; ?> !</h3>
+     <div class="w3-padding-32">
        <strong>Identifiant: </strong> <?php echo $_SESSION['identifiant']; ?><br><br>
        <strong>Nom:</strong> <?php echo $_SESSION['nom']; ?><br><br>
        <strong>Prenom:</strong> <?php echo $_SESSION['prenom']; ?><br><br>
       <strong>Email:</strong> <?php echo $_SESSION['email']; ?><br><br>
        <strong>Sexe:</strong> <?php echo $_SESSION['sexe']; ?><br><br>
       <strong>Adresse:</strong> <?php echo $_SESSION['adresse']; ?><br><br>
+      </div>
       <div >
      </div>
      </div>
      </section>
   <article>
+  <div class="w3-padding-64"></div>
   </article>
   </body>
   <footer>
+  <div  class=" w3-bar w3-green w3-xlarge  w3-center">
+    Copyright ©<?php echo date('Y')?> Astou & Ablaye||Tous droits réservés 
+    </div>
 </footer>
 </html>

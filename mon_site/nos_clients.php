@@ -24,12 +24,11 @@ $result = $query->fetchAll();
     <main class="container">
         <div class="row">
             <section class="col-12">
-                <h1><strong>LISTE DE NOS CLIENTS</strong></h1>
+                <h1 class="w3-text-green"><strong>LISTE DE NOS CLIENTS</strong></h1>
                 <table class="w3-table w3-bordered w3-border">
                     <thead class='w3-green'>
                         <th>ID</th>
                         <th>IDENTIFIANT</th>
-                        <th>MDP</th>
                         <th>NOM</th>
                         <th>PRENOM</th>
                         <th>EMAIL</th>
@@ -40,19 +39,18 @@ $result = $query->fetchAll();
                     <tbody>
 
                     <?php
-                    foreach($result as $produit){
+                    foreach($result as $client){
                     ?>
                         <tr>
-                        <td><?= $produit['id_membre'] ?> </td>
-                        <td><?= $produit['identifiant'] ?> </td>
-                        <td><?= $produit['mdp'] ?> </td>
-                        <td><?= $produit['nom'] ?> </td>
-                        <td><?= $produit['prenom'] ?> </td>
-                        <td><?= $produit['email'] ?> </td>
-                        <td><?= $produit['sexe'] ?> </td>
-                        <td><?= $produit['adresse'] ?> </td>
-                        <td ><a href="supprimer.php?id_membre=<?= $produit['id_membre']?>"><i class="fa fa-trash-o" style="font-size:48px;color:red"></i></a>
-                        <a href="modifier.php?id_membre=<?= $produit['id_membre']?>"><i class="fa fa-edit" style="font-size:48px;color:green" ></i></a></td>
+                        <td><?= $client['id_membre'] ?> </td>
+                        <td><?= $client['identifiant'] ?> </td>
+                        <td><?= $client['nom'] ?> </td>
+                        <td><?= $client['prenom'] ?> </td>
+                        <td><?= $client['email'] ?> </td>
+                        <td><?= $client['sexe'] ?> </td>
+                        <td><?= $client['adresse'] ?> </td>
+                       <td> <a href="modifier.php?id_membre=<?= $produit['id_membre']?>"><i class="fa fa-edit" style="font-size:48px;color:green" ></i></a>
+                        <a onclick="return confirm('Voulez-vous vraiment supprimer cet enrégistrement?')" href="supprimer.php?id_membre=<?= $client['id_membre'];?>"><i class="fa fa-trash-o" style="font-size:48px;color:red"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;</td>
                     </tr>
                     <?php
 
@@ -61,7 +59,8 @@ $result = $query->fetchAll();
                     
                     </tbody>
                 </table><br>
-                <a href="inscription.php" class="w-3-button w3-round w3-xxlarge w3-green">Ajouter un client</a>
+                <a href="inscription.php" class="w-3-button w3-round w3-xxxlarge w3-green">Ajouter un client</a><br>
+                <a href="index.php" class="w-3-button w3-round w3-xlarge w3-green">Retour</a>
             </section>
         </div>
     </main>

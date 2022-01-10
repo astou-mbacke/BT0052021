@@ -7,7 +7,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MON SITE</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
@@ -18,7 +19,7 @@
 <div class="w3-row w3-padding w3-green w3-xlarge">
   <div class="w3-quarter">
     <div class="w3-bar w3-cursive">
-    <h2><img class="w3-hide-small w3-circle" src="logo.jpg" style="height:50px;">Mini MarKet.com</h2>
+    <h2><img class="w3-hide-small w3-circle" src="mes_photo/logo.jpg" style="height:50px;">Mini MarKet.com</h2>
 
     </div>
   </div>
@@ -40,11 +41,12 @@
 </nav>
 </header>
 <article>
-<div class="w3-content w3-section"  style="max-width:100%">
-  <img class="mySlides" src="e-commerce.jpg" style="width:100%">
-  <img class="mySlides" src="e-commerce.jpeg" style="width:100%">
-  <img class="mySlides" src="e-commerce2.jpg" style="width:100%">
-  <img class="mySlides" src="e-commerce3.jpg" style="width:100%">
+
+<div class="w3-auto w3-section"  style="max-width:70%">
+  <img class="mySlides" src="mes_photo/e-commerce.jpg" style="width:100%">
+  <img class="mySlides" src="mes_photo/e-commerce.jpeg" style="width:100%">
+  <img class="mySlides" src="mes_photo/e-commerce2.jpg" style="width:100%">
+  <img class="mySlides" src="mes_photo/e-commerce3.jpg" style="width:100%">
 </div>
 <script>
 var myIndex = 0;
@@ -70,61 +72,83 @@ function carousel() {
 </div>
 <div class="w3-third">
   <div class="w3-card">
-    <img src="cosmetiques.jpg" style="width:95%">
+    <img src="mes_photo/cosmetiques.jpg" style="width:95%">
     <div class="w3-container">
-      <h4 class="w3-btn w3-black">Produits cosmétique</h4>
+      <h4 class="w3-btn w3-green">Produits cosmétique</h4>
     </div>
   </div>
 </div>
 <div class="w3-third">
   <div class="w3-card">
-    <img src="chaussure.jpg" style="width:95%">
+    <img src="mes_photo/chaussure.jpg" style="width:95%">
     <div class="w3-container">
-      <h4 class="w3-btn w3-black">Chaussures</h4>
+      <h4 class="w3-btn w3-green">Chaussures</h4>
     </div>
   </div>
 </div>
 <div class="w3-third">
   <div class="w3-card">
-    <img src="habillement.jpg" style="width:95%">
+    <img src="mes_photo/habillement.jpg" style="width:95%">
     <div class="w3-container">
-      <h4 class="w3-btn w3-black">Vetements</h4>
+      <h4 class="w3-btn w3-green">Vetements</h4>
     </div>
   </div>
 </div>
 <div class="w3-third">
   <div class="w3-card">
-    <img src="fruits-et-legumes.jpeg" style="width:95%">
+    <img src="mes_photo/fruits-et-legumes.jpeg" style="width:95%">
     <div class="w3-container">
-      <h4 class="w3-btn w3-black">Fruits et Légumes</h4>
+      <h4 class="w3-btn w3-green">Fruits et Légumes</h4>
     </div>
   </div>
 </div>
 <div class="w3-third">
   <div class="w3-card">
-    <img src="original.jpg" style="width:90%">
+    <img src="mes_photo/original.jpg" style="width:90%">
     <div class="w3-container">
-      <h4 class="w3-btn w3-black">Téléphone</h4>
+      <h4 class="w3-btn w3-green">Téléphone</h4>
     </div>
   </div>
 </div>
 <div class="w3-third">
   <div class="w3-card">
-    <img src="meuble.jpg" style="width:95%">
+    <img src="mes_photo/meuble.jpg" style="width:95%">
     <div class="w3-container">
-      <h4 class="w3-btn w3-black">Meubles et décoaration</h4>
+      <h4 class="w3-btn w3-green">Meubles et décoaration</h4>
     </div>
   </div>
 </div>
 </section>
 </body>
+<div class="w3-container ">
+<button onclick="myFunction('Demo1')" class="w3-button w3-blo w3-green w3-left-align">A Propos</button>
+<div id="Demo1" class="w3-hide w3-animate-zoom">
+<p> MINI MARKET est une entreprise de commerce en ligne présente sur le marché africain. Fondée en 2021 par Ablaye & Astou, mini market vend des produits électroniques, de cosmétiques, de l’alimentaire et des services.</p>
+  </div>
+</div>
+
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
 <footer>
     <div  class=" w3-bar w3-green w3-xlarge w3-green">
     Copyright ©<?php echo date('Y')?> Astou & Ablaye||Tous droits réservés 
-    <h1>contact:</h1> 
+    <h1>Contact:</h1> 
    <p> Tel:0022177184033 ou 00221781697486</p>
     <p> Mail:minimarket@gmail.sn</p>
     <p>Adresse:dakar,Sénégal</p>
+<i class="fa fa-facebook-f" style="font-size:36px"></i>
+<i class="fa fa-instagram" style="font-size:36px"></i>
+<i class="fa fa-youtube" style="font-size:36px"></i>
+<i class="fa fa-twitter" style="font-size:36px"></i>
+<i class="fa fa-whatsapp" style="font-size:36px"></i>
     </div>
 </footer>
 </html>

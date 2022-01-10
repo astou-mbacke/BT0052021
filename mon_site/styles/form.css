@@ -1,5 +1,5 @@
 body{
-    background-image: url("e-commerce.jpeg");
+    background-image: url("../mes_photo/e-commerce.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
    }
@@ -12,14 +12,15 @@ body{
      border: 1px solid green;
      border-radius: 1em;
      margin-top: 50px;
-     background-color: green ;
-    
+     background-color: green;
+    opacity: 90%;
      }
  
  label{
      font-weight: bold;
      font-size:15px;  
      color: white;
+
  }
  
  #button{
@@ -30,4 +31,9 @@ body{
  h2{
      color: white;
      text-align: center;
+ }
+ input{
+     border: 1px solid white;
+     border-radius:6px;
+     padding: 10px; 
  }

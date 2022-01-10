@@ -7,3 +7,4 @@ if($preparation->execute([':id_membre'=>$id])){
         header('location:nos_clients.php');
 }
 ?>
+

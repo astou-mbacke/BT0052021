@@ -3,7 +3,7 @@
     include('head.php');
     if(isset($_POST['inscription'])){
         $identifiant=htmlspecialchars($_POST['identifiant']);
-        $mdp=htmlspecialchars($_POST['mdp']);
+        $mdp=sha1($_POST['mdp']);
         $nom=htmlspecialchars($_POST['nom']);
         $prenom=htmlspecialchars($_POST['prenom']);
         $email=htmlspecialchars($_POST['email']);
@@ -57,7 +57,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>INSCRIPTION</title>
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
 <form method="post" action="">

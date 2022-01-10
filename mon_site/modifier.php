@@ -33,7 +33,7 @@ if (isset($_POST['identifiant']) && isset($_POST['mdp']) && isset($_POST['nom'])
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>FORMULAIRE MODIFIER</title>
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
 <h2>Mettre à jour client</h2>

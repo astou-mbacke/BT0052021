@@ -4,7 +4,7 @@ session_start();
     include('head.php');
     if(isset($_POST['connecter'])){
         $email=htmlspecialchars($_POST['email']);
-        $mdp=htmlspecialchars($_POST['mdp']);
+        $mdp=sha1($_POST['mdp']);
 
         if (!empty($_POST['email']) AND !empty($_POST['mdp']))  
         {
@@ -40,7 +40,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="styles/form.css">
     <title>formulaire Connexion</title>
 </head>
 <body>
