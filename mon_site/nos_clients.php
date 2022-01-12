@@ -49,7 +49,7 @@ $result = $query->fetchAll();
                         <td><?= $client['email'] ?> </td>
                         <td><?= $client['sexe'] ?> </td>
                         <td><?= $client['adresse'] ?> </td>
-                       <td> <a href="modifier.php?id_membre=<?= $produit['id_membre']?>"><i class="fa fa-edit" style="font-size:48px;color:green" ></i></a>
+                       <td> <a href="modifier.php?id_membre=<?= $client['id_membre']?>"><i class="fa fa-edit" style="font-size:48px;color:green" ></i></a>
                         <a onclick="return confirm('Voulez-vous vraiment supprimer cet enrégistrement?')" href="supprimer.php?id_membre=<?= $client['id_membre'];?>"><i class="fa fa-trash-o" style="font-size:48px;color:red"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;</td>
                     </tr>
                     <?php
