@@ -41,7 +41,7 @@
 </nav>
 </header>
 <article>
-
+<h1 class="w3-center w3-animate-fading w3-green ">BIENVENU SUR MINI MARKET!</h1>
 <div class="w3-auto w3-section"  style="max-width:70%">
   <img class="mySlides" src="mes_photo/e-commerce.jpg" style="width:100%">
   <img class="mySlides" src="mes_photo/e-commerce.jpeg" style="width:100%">
