@@ -19,12 +19,25 @@ $result = $query->fetchAll();
     <title>listes des membres</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+<?php
+include('includes/headerAdmin.php')
+?>
     <main class="container">
         <div class="row">
             <section class="col-12">
-                <h1 class="w3-text-green"><strong>LISTE DE NOS CLIENTS</strong></h1>
+                <h1 class="w3-text-green w3-center"><strong>LISTE DE NOS CLIENTS</strong></h1>
+                <a href="inscription.php" class="w3-btn  w3-round w3-green w3-right"><i class="fa fa-plus"></i>Ajouter</a><br>
                 <table class="w3-table w3-bordered w3-border">
                     <thead class='w3-green'>
                         <th>ID</th>
@@ -49,8 +62,9 @@ $result = $query->fetchAll();
                         <td><?= $client['email'] ?> </td>
                         <td><?= $client['sexe'] ?> </td>
                         <td><?= $client['adresse'] ?> </td>
-                       <td> <a href="modifier.php?id_membre=<?= $client['id_membre']?>"><i class="fa fa-edit" style="font-size:48px;color:green" ></i></a>
-                        <a onclick="return confirm('Voulez-vous vraiment supprimer cet enrégistrement?')" href="supprimer.php?id_membre=<?= $client['id_membre'];?>"><i class="fa fa-trash-o" style="font-size:48px;color:red"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                       <td> <a href="modifier.php?id_membre=<?= $client['id_membre']?>"  class="btn  btn-success"><i class="fa fa-edit" style="font-size:15px;" ></i></a>
+                       <a  href="detailcontact.php?id=<?= $mess['id_contact'];?>" class="btn  btn-info"   href="show.php?id="><i class="fa fa-eye" style="font-size:15px;"></i></a>
+                       <a onclick="return confirm('Voulez-vous vraiment supprimer cet enrégistrement?')" href="supprimer.php?id_membre=<?= $client['id_membre'];?>" class="btn  btn-danger"><i class="fa fa-trash-o" style="font-size:15px;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;</td>
                     </tr>
                     <?php
 
@@ -59,8 +73,7 @@ $result = $query->fetchAll();
                     
                     </tbody>
                 </table><br>
-                <a href="inscription.php" class="w-3-button w3-round w3-xxxlarge w3-green">Ajouter un client</a><br>
-                <a href="index.php" class="w-3-button w3-round w3-xlarge w3-green">Retour</a>
+ 
             </section>
         </div>
     </main>

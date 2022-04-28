@@ -13,7 +13,7 @@
     <header>
             
     <nav class="w3-bar w3-green w3-xlarge w3-hover-green w3-text-white" >
-    <a href="" class="w3-bar-item w3-button w3-cursive ">MINI <span>MARKET.COM</span></a>
+    <a href="" class="w3-bar-item w3-button w3-cursive ">Online <span>MARKET.COM</span></a>
     </nav>
     </div>
     </header>

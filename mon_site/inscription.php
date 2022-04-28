@@ -1,6 +1,6 @@
 <?php 
     include('connexion_site.php');
-    include('head.php');
+    include('includes/headerClient.php');
     if(isset($_POST['inscription'])){
         $identifiant=htmlspecialchars($_POST['identifiant']);
         $mdp=sha1($_POST['mdp']);
