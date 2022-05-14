@@ -55,7 +55,7 @@
       <td>
                           <a  href="detailcontact.php?id=<?= $mess['id_contact'];?>" class="btn  btn-info"   href="show.php?id="><i class="fa fa-eye" style="font-size:15px;"></i></a>
                           
-                              <a onclick="return confirm('Voulez-vous vraiment supprimer cet enrégistrement?')" href="supprimer.php?id=<?= $mess['id_contact'];?>" class="btn btn-danger" ><i class="fa fa-trash" style="font-size:15px;"></i></a>
+                              <a onclick="return confirm('Voulez-vous vraiment supprimer cet enrégistrement?')" href="supprimermes.php?id_contact=<?= $mess['id_contact'];?>" class="btn btn-danger" ><i class="fa fa-trash" style="font-size:15px;"></i></a>
                               
                           </td>
                       

@@ -47,6 +47,7 @@ include('includes/headerAdmin.php')
                         <th>EMAIL</th>
                         <th>SEXE</th>
                         <th>ADRESSE</th>
+                        <th>ROLE</th>
                         <th>ACTIONS</th>
                     </thead>
                     <tbody>
@@ -62,8 +63,10 @@ include('includes/headerAdmin.php')
                         <td><?= $client['email'] ?> </td>
                         <td><?= $client['sexe'] ?> </td>
                         <td><?= $client['adresse'] ?> </td>
+                        <td><?= $client['role'] ?> </td>
+
                        <td> <a href="modifier.php?id_membre=<?= $client['id_membre']?>"  class="btn  btn-success"><i class="fa fa-edit" style="font-size:15px;" ></i></a>
-                       <a  href="detailcontact.php?id=<?= $mess['id_contact'];?>" class="btn  btn-info"   href="show.php?id="><i class="fa fa-eye" style="font-size:15px;"></i></a>
+                       <a  href="detailclient.php?id_membre=<?= $client['id_membre'];?>" class="btn  btn-info"  ><i class="fa fa-eye" style="font-size:15px;"></i></a>
                        <a onclick="return confirm('Voulez-vous vraiment supprimer cet enrégistrement?')" href="supprimer.php?id_membre=<?= $client['id_membre'];?>" class="btn  btn-danger"><i class="fa fa-trash-o" style="font-size:15px;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;</td>
                     </tr>
                     <?php

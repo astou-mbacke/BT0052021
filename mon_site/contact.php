@@ -75,11 +75,11 @@
   <input class="w3-input w3-border w3-light-grey" type="text" placeholder="Enter your full name" name="name" required />
 
   <label class="w3-text-green"><b>Email</b></label>
-  <input class="w3-input w3-border w3-light-grey" type="email" placeholder="Enter your email address" name="email" required >
+  <input class="w3-input w3-border w3-light-grey" type="email" placeholder="Entrer votre addresse email " name="email" required >
   <label class="w3-text-green"><b>Sujet</b></label>
-  <input class="w3-input w3-border w3-light-grey" type="text" placeholder="Enter votre sujet" name="subject" required />
+  <input class="w3-input w3-border w3-light-grey" type="text" placeholder="Entrer votre sujet" name="subject" required />
   <label class="w3-text-green"><b>Message</b></label>
-  <textarea class="w3-input w3-border w3-light-grey" placeholder="Enter your message" name="message" required></textarea><br>
+  <textarea class="w3-input w3-border w3-light-grey" placeholder="Entrer votre message" name="message" required></textarea><br>
   <button class="w3-btn w3-green" value="Envoyer">Envoyer</button>
 </form>
 </section>  

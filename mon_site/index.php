@@ -151,6 +151,7 @@ $res=$requete->fetchAll();
             </div>
          </div>
       </section>
+         <hr>
 <?php 
     include('includes/footer.php');
 ?>

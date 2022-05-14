@@ -9,8 +9,9 @@
         $email=htmlspecialchars($_POST['email']);
         $sexe=htmlspecialchars($_POST['sexe']);
         $adresse=htmlspecialchars($_POST['adresse']);
+        $role=htmlspecialchars($_POST['role']);
 
-        if (!empty($_POST['identifiant']) AND !empty($_POST['mdp']) AND !empty($_POST['nom']) AND !empty($_POST['prenom'])  AND !empty($_POST['email'])  AND !empty($_POST['sexe'])  AND !empty($_POST['adresse'])) 
+        if (!empty($_POST['identifiant']) AND !empty($_POST['mdp']) AND !empty($_POST['nom']) AND !empty($_POST['prenom'])  AND !empty($_POST['email'])  AND !empty($_POST['sexe'])  AND !empty($_POST['adresse']) AND !empty($_POST['role'])) 
         {
        
             $identifiantlenght=strlen($identifiant);
@@ -23,8 +24,8 @@
                         $mailexist=$reqmail->rowCount();
                         if($mailexist==0)
                         {
-                   $insert=$db->prepare("INSERT INTO membre(identifiant,mdp,nom,prenom,email,sexe,adresse) VALUES (?,?,?,?,?,?,?)");
-                   $insert->execute(array($identifiant,$mdp,$nom,$prenom,$email,$sexe,$adresse));
+                   $insert=$db->prepare("INSERT INTO membre(identifiant,mdp,nom,prenom,email,sexe,adresse,role) VALUES (?,?,?,?,?,?,?,?)");
+                   $insert->execute(array($identifiant,$mdp,$nom,$prenom,$email,$sexe,$adresse,$role));
                    echo "<div class='w3-panel w3-green w3-round-xxlarge'>
                             <h1>Inscription avec succes!</h1>
                             <a href='connexion.php'>cliquer ici pour vous connecter</a>
@@ -76,6 +77,8 @@
     <input type="radio" name="sexe" id="sexe" value="f" checked="" >Féminin<br>
     <label for="prix">Adresse</label><br>
     <input type="text" name="adresse" id="adresse"  placeholder="votre adresse" class="w3-input w3-border"><br>
+    <label for="prix">Role</label><br>
+    <input type="text" name="role" id="role"  placeholder="votre role" class="w3-input w3-border"><br>
     <input type="submit" name="inscription" value="S'inscrire" id="button"><br>
 </form>
 </body>

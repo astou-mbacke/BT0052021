@@ -29,11 +29,12 @@ $message = $preparation->fetchAll(PDO::FETCH_OBJ);
 <body>
 <div class="w3-container">
         <section>           
-    <?php foreach ($message as $mess){ 
+<?php foreach ($message as $mess){ 
+    echo"<img src='mes_photo/'. $mess->image ><br><br>";
+    echo "Titre: <strong>".$mess->titre."</strong> <br><br>";
+    echo "Prix : <strong>".$mess->prix." </strong> <br><br>";
+    echo "Description: <strong>$mess->description</strong> <br>";
     
-    echo " <h2>Titre</h2><strong>".$mess->titre."</strong><br><br>";
-    echo " <h2>Prix</h2><strong>".$mess->prix."</strong><br><br>";
-    echo "Voici la description : <strong>".$mess->description;
     
      } ?>
         </section> 

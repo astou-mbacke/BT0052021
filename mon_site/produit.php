@@ -301,9 +301,9 @@ if ($stmt = $mysqli->prepare('SELECT * FROM produit ORDER BY titre LIMIT ?,?')) 
 					<td><?php echo $row['prix']; ?></td>
                     <td><?php echo $row['description']; ?></td>
                 <td>
-                          <a  href="detailpro.php?id=<?= $mess['id_contact'];?>" class="btn btn-info"><i class="fa fa-eye"  style="font-size:15px;"></i></a>
+                          <a  href="detailpro.php?id_produit=<?= $row['id_produit'];?>" class="btn btn-info"><i class="fa fa-eye"  style="font-size:15px;"></i></a>
                           
-                              <a onclick="return confirm('Voulez-vous vraiment supprimer cet enrégistrement?')" href="supprimerprod.php?id=<?= $row['id_produit'];?>" class="btn btn-danger" ><i class="fa fa-trash"  style="font-size:15px;"></i></a>
+                              <a onclick="return confirm('Voulez-vous vraiment supprimer cet enrégistrement?')" href="supprimerprod.php?id_produit=<?= $row['id_produit'];?>" class="btn btn-danger" ><i class="fa fa-trash"  style="font-size:15px;"></i></a>
                               
                           </td>
       </tr>
